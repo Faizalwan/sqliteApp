@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingBottom="@dimen/activity_vertical_margin" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" tools:context=".UpdateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout1">
+
+        <EditText
+            android:id="@+id/editText_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_name" />
+
+        <EditText
+            android:id="@+id/editText_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="@string/hint_phonenumber" />
+
+        <Spinner
+            android:id="@+id/label_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+        <CheckBox
+            android:id="@+id/cb_family"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_family" />
+
+        <CheckBox
+            android:id="@+id/cb_friends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_firends" />
+        <RadioGroup
+            android:id="@+id/rgSim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_sim1" />
+
+            <RadioButton
+                android:id="@+id/rg2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_sim2" />
+        </RadioGroup>
+
+        <Button
+            style="@style/ButtonGeneral1"
+            android:id="@+id/button_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_button"
+            android:drawableLeft="@android:drawable/ic_menu_save"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
